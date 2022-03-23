@@ -11,6 +11,9 @@
   </head>
 
   <body>
-    Hi
+    <form data-controller="hello">
+      <input type="text" data-hello-target="email">
+      <input type="submit" data-action="click->hello#submit">
+    </form>
   </body>
 </html>
