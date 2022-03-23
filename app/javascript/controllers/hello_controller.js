@@ -16,8 +16,6 @@ export default class extends Controller {
           email: this.emailTarget.value
         }
       })
-    }).then(response => {
-      console.log(response)
-    })
+    }).then(response => response.json()).then(data => { console.log(data) })
   }
 }
